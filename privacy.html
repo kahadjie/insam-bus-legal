@@ -1,107 +1,75 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INSAM BUS - Politique de confidentialité</title><style>
-:root{--fg:#202124;--bg:#fff;--mut:#5f6368;--acc:#1a73e8;--line:#dadce0}
-@media (prefers-color-scheme:dark){:root{--fg:#e8eaed;--bg:#202124;--mut:#9aa0a6;--acc:#8ab4f8;--line:#3c4043}}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
-h1{font-size:1.6rem;margin:.2em 0}h2{font-size:1.2rem;margin:1.8em 0 .4em;padding-top:.6em;border-top:1px solid var(--line)}
-p,li{color:var(--fg)}.mut{color:var(--mut);font-size:.9rem}a{color:var(--acc)}
-table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
-</style></head><body><main>
-<h1>Politique de confidentialité d'INSAM BUS</h1>
-<p class="mut">Dernière mise à jour : 8 novembre 2026</p>
-<p class="mut"><a href="index.html">Accueil</a> · <a href="privacy.html">Confidentialité</a> · <a href="terms.html">Conditions</a> · <a href="delete-account.html">Supprimer mon compte</a></p>
-<p>INSAM BUS est l'application officielle de suivi des bus universitaires de l'INSAM, réalisée avec son autorisation. Elle permet aux étudiants de voir les bus actifs de leur ville, aux chauffeurs de partager la position de leur bus et de communiquer entre eux, et à l'administration de gérer le service. Elle s'adresse aux personnes âgées de 18 ans et plus. Cette page explique quelles données sont collectées, pourquoi, qui les voit, combien de temps elles sont gardées et comment les supprimer.</p>
-
-<h2>1. Responsable du traitement</h2>
-<p>Kenmoe Kahadjie Felix, Bafoussam, Cameroun, développeur de l'application. Contact : <a href="mailto:kenmoekahadjiefelix@gmail.com">kenmoekahadjiefelix@gmail.com</a>.</p>
-
-<h2>2. Données collectées</h2>
-<table>
-<tr><th>Donnée</th><th>Qui</th><th>Pourquoi</th></tr>
-<tr><td>Adresse e-mail et, selon votre choix de connexion, identifiant du compte Google (« Continuer avec Google ») ou mot de passe (connexion par e-mail ; le mot de passe est conservé sous forme chiffrée par le service d'authentification et n'est jamais lisible)</td><td>Tous</td><td>Créer et sécuriser votre compte</td></tr>
-<tr><td>Prénom, nom</td><td>Tous</td><td>Identifier la personne auprès de l'administration</td></tr>
-<tr><td>Pseudo (identité publique dans l'application)</td><td>Tous</td><td>Vous identifier auprès des autres utilisateurs sans montrer votre nom</td></tr>
-<tr><td>Ville</td><td>Tous</td><td>Afficher les bus et les points de ramassage de votre ville</td></tr>
-<tr><td>Rôle (étudiant, chauffeur, administrateur)</td><td>Tous</td><td>Afficher les bonnes fonctions</td></tr>
-<tr><td>Position GPS précise du téléphone</td><td>Chauffeurs, uniquement quand ils se rendent « Visible »</td><td>Afficher le bus sur la carte des étudiants</td></tr>
-<tr><td>Demande « Je suis ici » à un point de ramassage, et nombre d'amis sans téléphone qui vous accompagnent (un simple nombre, sans identité)</td><td>Étudiants</td><td>Prévenir le chauffeur qu'on l'attend à un point</td></tr>
-<tr><td>Montée dans un bus (quel trajet), pouce en haut ou en bas et étoile donnés à un chauffeur (une fois par jour)</td><td>Étudiants</td><td>Compter les passagers et reconnaître le travail d'un chauffeur</td></tr>
-<tr><td>Points et niveau de chauffeur, et les événements qui les font varier (secours à un autre bus, étoiles, pouces, ajustements de l'administration)</td><td>Chauffeurs</td><td>Reconnaître l'engagement des chauffeurs</td></tr>
-<tr><td>Pannes signalées (bus, heure, résolution) et chauffeur qui vient aider</td><td>Chauffeurs</td><td>Prévenir les étudiants et organiser le secours</td></tr>
-<tr><td>Messages écrits entre chauffeurs, signalements et blocages</td><td>Chauffeurs</td><td>Permettre la communication entre chauffeurs et protéger contre les abus (section 5)</td></tr>
-<tr><td>Messages, signalements, demandes de bus, propositions de point de ramassage envoyés à l'administration</td><td>Chauffeurs, étudiants</td><td>Les transmettre à l'administrateur</td></tr>
-<tr><td>Communiqués lus</td><td>Tous</td><td>Afficher le nombre de non lus</td></tr>
-<tr><td>Leçons de découverte terminées (identifiants de leçons)</td><td>Tous</td><td>Ne pas vous reproposer un tutoriel déjà suivi</td></tr>
-<tr><td>Identifiant de notification de votre téléphone (jeton Firebase Cloud Messaging)</td><td>Tous, si vous acceptez les notifications</td><td>Vous envoyer les notifications (section 6)</td></tr>
-</table>
-<p>Nous ne collectons <strong>aucune position des étudiants</strong>. Si un étudiant autorise la localisation, elle sert uniquement à afficher son point sur la carte de son téléphone et n'est jamais envoyée à nos serveurs. L'application ne contient aucune publicité, aucun achat intégré et aucun outil de pistage publicitaire.</p>
-
-<h2>3. Position des chauffeurs</h2>
-<p><strong>Quand le chauffeur active « Visible »</strong>, l'application utilise sa position précise, <strong>même lorsque l'écran est éteint ou que l'application n'est plus affichée</strong>, grâce à un service au premier plan signalé par une notification permanente « Service en cours ». Ce service s'arrête quand le chauffeur désactive « Visible » ou termine son service. Rien n'est envoyé en dehors de cette période.</p>
-<ul>
-<li>Le téléphone lit sa position environ une fois par seconde (toutes les 5 secondes si la batterie est faible) et la lisse sur l'appareil pour la rendre plus stable.</li>
-<li>La position lissée est envoyée au serveur environ toutes les 10 secondes. Elle n'est plus envoyée si le signal GPS est trop imprécis.</li>
-<li>Seule la dernière position est conservée et elle est remplacée à chaque envoi : <strong>aucun historique de positions n'est gardé</strong>.</li>
-<li>Le bus disparaît de la carte des étudiants après 60 secondes sans mise à jour.</li>
-<li>L'application ne demande pas la permission de localisation « en permanence » (accès en arrière-plan de Android) : le service est lancé par le chauffeur, application ouverte.</li>
-</ul>
-<p>Les étudiants voient ce bus et sa position tant qu'il est « Visible ». L'administration voit les bus de toutes les villes.</p>
-
-<h2>4. Qui voit quoi</h2>
-<ul>
-<li>Le <strong>pseudo</strong> est votre identité publique : c'est lui que voient les autres utilisateurs. Votre prénom et votre nom ne sont visibles que de vous et de l'administration, sauf pour la messagerie entre chauffeurs (section 5).</li>
-<li>Les étudiants voient les bus actifs, ville par ville (nom du bus et position).</li>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INSAM BUS - Politique de confidentialité</title><meta name="color-scheme" content="light dark"><style>
+:root{--bg:#f6f8fb;--card:#fff;--fg:#17202e;--mut:#5b6678;--acc:#0b4f9e;--acc2:#e8f0fb;--line:#dde3ec;--hd:#0b2a52;--hdfg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0e141d;--card:#161e2b;--fg:#e6ebf3;--mut:#9aa7ba;--acc:#7fb2f0;--acc2:#1a2a42;--line:#27324a;--hd:#0a1b34;--hdfg:#fff}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+a{color:var(--acc)}
+header.top{background:var(--hd);color:var(--hdfg)}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.04em;color:var(--hdfg);text-decoration:none;font-size:1.05rem}
+nav.menu{display:flex;gap:4px;flex-wrap:wrap}
+nav.menu a{color:#cfdcf0;text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:6px}
+nav.menu a:hover{background:rgba(255,255,255,.12);color:#fff}
+nav.menu a[aria-current=page]{background:rgba(255,255,255,.18);color:#fff}
+.hero{padding:28px 0 36px}
+.hero h1{margin:0 0 6px;font-size:1.9rem;line-height:1.25}
+.hero p{margin:0;color:#cfdcf0;font-size:.95rem}
+main.wrap{padding-top:28px;padding-bottom:56px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:0 0 18px}
+.summary{background:var(--acc2);border-color:transparent}
+.summary h2{margin:0 0 8px;font-size:1.05rem;border:0;padding:0}
+.summary ul{margin:0;padding-left:20px}
+.summary li{margin:3px 0}
+.toc ol{margin:6px 0 0;padding-left:20px;columns:2;column-gap:28px}
+.toc li{margin:2px 0;break-inside:avoid}
+.toc h2{margin:0;font-size:1.05rem;border:0;padding:0}
+h2{font-size:1.2rem;margin:0 0 10px;scroll-margin-top:12px}
+h2 .n{color:var(--acc);margin-right:6px}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 10px;padding-left:22px}
+li{margin:4px 0}
+.tw{overflow-x:auto;margin:6px 0 10px;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:520px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--acc2);font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.03em}
+tr:last-child td{border-bottom:0}
+.note{font-size:.9rem;color:var(--mut)}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;position:relative;padding:4px 0 4px 40px;margin:8px 0}
+.steps li:before{content:counter(s);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--acc);color:#fff;text-align:center;line-height:28px;font-weight:700;font-size:.9rem}
+footer.bot{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--mut);font-size:.88rem}
+footer.bot .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+@media (max-width:560px){.hero h1{font-size:1.5rem}.toc ol{columns:1}.card{padding:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><div class="bar"><a class="brand" href="index.html">INSAM BUS</a><nav class="menu" aria-label="Navigation"><a href="index.html">Accueil</a><a href="privacy.html" aria-current="page">Confidentialité</a><a href="terms.html">Conditions</a><a href="delete-account.html">Supprimer mon compte</a></nav></div><div class="hero"><h1>Politique de confidentialité</h1><p>Dernière mise à jour : 8 novembre 2026</p></div></div></header>
+<main class="wrap">
+<div class="card summary"><h2>L'essentiel</h2><ul>
+<li>Seuls les chauffeurs partagent leur position, et uniquement quand ils activent « Visible ». <strong>Aucune position d'étudiant n'est envoyée.</strong></li>
+<li>Aucun historique de positions n'est conservé.</li>
+<li>Aucune publicité, aucun achat intégré, aucun outil de pistage publicitaire.</li>
+<li>Vous pouvez supprimer votre compte à tout moment, dans l'application ou par e-mail.</li>
+<li>Les messages entre chauffeurs peuvent être lus par l'administrateur et sont supprimés après 90 jours.</li>
+</ul></div><div class="card toc"><h2>Sommaire</h2><ol><li><a href="#s1">Responsable du traitement</a></li><li><a href="#s2">Données collectées</a></li><li><a href="#s3">Position des chauffeurs</a></li><li><a href="#s4">Qui voit quoi</a></li><li><a href="#s5">Messagerie entre chauffeurs</a></li><li><a href="#s6">Notifications</a></li><li><a href="#s7">Données enregistrées sur votre téléphone</a></li><li><a href="#s8">Prestataires et services tiers</a></li><li><a href="#s9">Durée de conservation</a></li><li><a href="#s10">Supprimer votre compte et vos données</a></li><li><a href="#s11">Vos droits</a></li><li><a href="#s12">Âge minimum</a></li><li><a href="#s13">Modifications</a></li></ol></div><section class="card" id="s1"><h2><span class="n">1.</span>Responsable du traitement</h2><p>Kenmoe Kahadjie Felix, Bafoussam, Cameroun, développeur de l'application.</p><p>Contact : <a href="mailto:kenmoekahadjiefelix@gmail.com">kenmoekahadjiefelix@gmail.com</a></p></section><section class="card" id="s2"><h2><span class="n">2.</span>Données collectées</h2><div class="tw"><table><tr><th>Donnée</th><th>Qui</th><th>Pourquoi</th></tr><tr><td>Adresse e-mail et, selon votre choix, identifiant du compte Google ou mot de passe (conservé sous forme chiffrée, jamais lisible)</td><td>Tous</td><td>Créer et sécuriser votre compte</td></tr><tr><td>Prénom, nom</td><td>Tous</td><td>Identifier la personne auprès de l'administration</td></tr><tr><td>Pseudo (identité publique dans l'application)</td><td>Tous</td><td>Vous identifier auprès des autres sans montrer votre nom</td></tr><tr><td>Ville</td><td>Tous</td><td>Afficher les bus et les points de ramassage de votre ville</td></tr><tr><td>Rôle (étudiant, chauffeur, administrateur)</td><td>Tous</td><td>Afficher les bonnes fonctions</td></tr><tr><td>Position GPS précise du téléphone</td><td>Chauffeurs, seulement quand ils sont « Visible »</td><td>Afficher le bus sur la carte des étudiants</td></tr><tr><td>Demande « Je suis ici » à un point de ramassage, avec le nombre d'amis sans téléphone qui vous accompagnent (un nombre, sans identité)</td><td>Étudiants</td><td>Prévenir le chauffeur qu'on l'attend</td></tr><tr><td>Montée dans un bus, étoile et pouce donnés à un chauffeur</td><td>Étudiants</td><td>Compter les passagers et reconnaître le travail des chauffeurs</td></tr><tr><td>Points et niveau de chauffeur, et les événements qui les font évoluer</td><td>Chauffeurs</td><td>Reconnaître l'engagement des chauffeurs</td></tr><tr><td>Pannes signalées et chauffeur venu aider</td><td>Chauffeurs</td><td>Prévenir les étudiants et organiser le secours</td></tr><tr><td>Messages entre chauffeurs, signalements et blocages</td><td>Chauffeurs</td><td>Permettre la communication et protéger contre les abus (section 5)</td></tr><tr><td>Messages, signalements, demandes de bus et propositions de point envoyés à l'administration</td><td>Chauffeurs, étudiants</td><td>Les transmettre à l'administrateur</td></tr><tr><td>Communiqués lus, leçons de découverte terminées</td><td>Tous</td><td>Afficher les non lus et ne pas répéter un tutoriel</td></tr><tr><td>Identifiant de notification de votre téléphone (Firebase Cloud Messaging)</td><td>Tous, si vous acceptez les notifications</td><td>Vous envoyer les notifications (section 6)</td></tr></table></div><p>Nous ne collectons <strong>aucune position des étudiants</strong>. Si un étudiant autorise la localisation, elle sert uniquement à afficher son point sur la carte de son téléphone et n'est jamais envoyée à nos serveurs.</p></section><section class="card" id="s3"><h2><span class="n">3.</span>Position des chauffeurs</h2><p>Lorsque le chauffeur active « Visible », l'application utilise sa position précise <strong>même quand l'écran est éteint ou que l'application n'est plus affichée</strong>. Un service au premier plan, signalé par une notification permanente « Service en cours », assure ce fonctionnement. Il s'arrête quand le chauffeur désactive « Visible » ou termine son service. En dehors de cette période, rien n'est envoyé.</p>
+<ul><li>Seule la dernière position est conservée et elle est remplacée à chaque envoi : <strong>aucun historique de positions n'est gardé</strong>.</li>
+<li>Le bus disparaît de la carte des étudiants dès que sa position n'est plus mise à jour.</li>
+<li>L'application ne demande pas l'accès à la position « en permanence » d'Android : le chauffeur lance lui-même le service, application ouverte.</li></ul>
+<p>Les étudiants voient ce bus tant qu'il est « Visible ». L'administration voit les bus de toutes les villes.</p></section><section class="card" id="s4"><h2><span class="n">4.</span>Qui voit quoi</h2><ul><li>Le <strong>pseudo</strong> est votre identité publique. Votre prénom et votre nom ne sont visibles que de vous et de l'administration, sauf pour la messagerie entre chauffeurs (section 5).</li>
+<li>Les étudiants voient les bus actifs de leur ville (nom du bus et position).</li>
 <li>Les points et le niveau d'un chauffeur ne sont visibles ni des étudiants ni des autres chauffeurs : seulement de lui-même et de l'administration.</li>
-<li>Les messages envoyés à l'administration et les signalements ne sont visibles que par leur auteur et par l'administrateur.</li>
-<li>L'administration voit les bus actifs de toutes les villes, les profils (nom, pseudo, ville, rôle), les points des chauffeurs et le nombre d'étoiles reçues.</li>
-</ul>
-<p>Vous pouvez modifier votre nom et votre pseudo une première fois librement, puis une fois tous les 30 jours.</p>
-
-<h2>5. Messagerie entre chauffeurs</h2>
-<ul>
-<li>Réservée aux chauffeurs, conversations de 1 à 1 (pas de groupe). Les étudiants n'y ont pas accès.</li>
-<li>Un message est visible par son destinataire et <strong>par l'administrateur, qui peut lire toutes les conversations entre chauffeurs</strong>. L'application le rappelle avant la première utilisation. N'y écrivez rien de personnel.</li>
+<li>Les messages à l'administration et les signalements ne sont visibles que par leur auteur et l'administrateur.</li>
+<li>L'administration voit les profils (nom, pseudo, ville, rôle), les bus de toutes les villes et les statistiques des chauffeurs.</li></ul></section><section class="card" id="s5"><h2><span class="n">5.</span>Messagerie entre chauffeurs</h2><ul><li>Réservée aux chauffeurs, en conversations de 1 à 1. Les étudiants n'y ont pas accès.</li>
+<li>Un message est visible par son destinataire et <strong>par l'administrateur, qui peut lire toutes les conversations entre chauffeurs</strong>. L'application le rappelle avant la première utilisation : n'y écrivez rien de personnel.</li>
 <li>Les messages sont <strong>supprimés automatiquement après 90 jours</strong>. Vous pouvez aussi supprimer vos propres messages.</li>
-<li>Vous pouvez <strong>signaler</strong> un message ou un chauffeur (l'administrateur est prévenu), et <strong>bloquer</strong> un chauffeur : plus aucun message ne passe dans les deux sens. L'administrateur peut supprimer un message abusif et retirer le rôle de chauffeur.</li>
-<li>Les signalements traités sont supprimés après 90 jours.</li>
-</ul>
-
-<h2>6. Notifications</h2>
-<p>Avec votre accord (Android 13 et plus), l'application envoie des notifications : communiqués, panne d'un bus, bus qui arrive à un point, demandes de points de ramassage, changement de rôle ou de bus, rappels de secours, niveaux, messages entre chauffeurs. Pour cela, votre téléphone enregistre un identifiant de notification auprès de Google (Firebase Cloud Messaging). Le texte d'une notification (par exemple le début d'un message entre chauffeurs) transite par les serveurs de Google et peut s'afficher sur l'écran verrouillé selon vos réglages. Vous pouvez refuser ou retirer l'autorisation dans les réglages du téléphone.</p>
-
-<h2>7. Données enregistrées sur votre téléphone</h2>
-<p>L'application garde sur l'appareil votre session de connexion, vos réglages (ville, thème, tutoriels, fenêtres déjà vues) et, si vous la téléchargez, la carte hors ligne de votre ville. Ces données restent sur le téléphone et disparaissent à la désinstallation.</p>
-
-<h2>8. Prestataires et services tiers</h2>
-<ul>
-<li><strong>Supabase</strong> : base de données et authentification. Les données sont hébergées dans l'Union européenne (Irlande).</li>
-<li><strong>Google</strong> : « Continuer avec Google » (nom, e-mail et identifiant du compte), Firebase Cloud Messaging (notifications) et services de localisation de Google Play (position du téléphone, traitée sur l'appareil). Aucune publicité Google n'est utilisée.</li>
-<li><strong>OpenFreeMap</strong> et <strong>OpenStreetMap</strong> : fonds de carte. Pour afficher la carte, votre téléphone télécharge des tuiles depuis les serveurs d'OpenFreeMap, qui reçoivent donc l'adresse IP de votre appareil, comme tout site web. Aucun compte ni identifiant ne leur est transmis. La carte est affichée avec la bibliothèque libre MapLibre. Données de carte © contributeurs d'OpenStreetMap, licence ODbL.</li>
-</ul>
-<p>Nous ne vendons pas vos données et ne les partageons pas à des fins publicitaires. Les échanges sont chiffrés (HTTPS) et les données sont protégées par des règles d'accès au niveau de la base de données.</p>
-
-<h2>9. Durée de conservation</h2>
-<table>
-<tr><th>Donnée</th><th>Durée</th></tr>
-<tr><td>Compte et profil</td><td>Tant que le compte existe</td></tr>
-<tr><td>Dernière position d'un bus</td><td>Remplacée à chaque envoi ; aucun historique</td></tr>
-<tr><td>Messages entre chauffeurs</td><td>90 jours</td></tr>
-<tr><td>Signalements traités</td><td>90 jours après traitement</td></tr>
-<tr><td>Pouces et étoiles du jour, pannes terminées</td><td>90 jours</td></tr>
-<tr><td>File des notifications</td><td>7 jours</td></tr>
-</table>
-<p>Les autres données (montées, points, leçons, demandes) sont gardées tant que le compte existe.</p>
-
-<h2>10. Supprimer votre compte et vos données</h2>
-<p>Dans l'application : touchez votre avatar en haut à droite pour ouvrir <strong>Paramètres</strong>, puis <strong>Supprimer mon compte</strong> (tout en bas de l'écran) et confirmez en tapant SUPPRIMER. La suppression est immédiate et définitive : elle efface votre profil, votre compte de connexion, votre mot de passe, vos montées, vos pouces et étoiles donnés et reçus, vos points, vos demandes, vos messages (y compris vos conversations avec d'autres chauffeurs, qui disparaissent aussi chez eux), vos leçons, vos communiqués lus et l'identifiant de notification de votre téléphone. Les trajets et pannes passés restent sous forme de statistiques sans identité. Le compte administrateur ne peut pas être supprimé depuis l'application.</p>
-<p>Sans l'application : voir la <a href="delete-account.html">page de suppression de compte</a>.</p>
-
-<h2>11. Vos droits</h2>
-<p>Conformément à la loi camerounaise sur la protection des données personnelles, vous pouvez demander l'accès à vos données, leur correction ou leur suppression, et retirer votre consentement, en écrivant à <a href="mailto:kenmoekahadjiefelix@gmail.com">kenmoekahadjiefelix@gmail.com</a>. Nous répondons dans un délai raisonnable.</p>
-
-<h2>12. Âge minimum</h2>
-<p>L'application s'adresse aux étudiants et personnels de l'enseignement supérieur, âgés de 18 ans et plus. Elle n'est pas destinée aux enfants.</p>
-
-<h2>13. Modifications</h2>
-<p>Cette politique peut évoluer. La date de mise à jour figure en haut de la page ; les changements importants sont annoncés dans l'application.</p>
-</main></body></html>
+<li>Vous pouvez <strong>signaler</strong> un message ou un chauffeur et <strong>bloquer</strong> un chauffeur : plus aucun message ne passe alors dans les deux sens.</li>
+<li>L'administrateur peut supprimer un message abusif et retirer le rôle de chauffeur. Les signalements traités sont supprimés après 90 jours.</li></ul></section><section class="card" id="s6"><h2><span class="n">6.</span>Notifications</h2><p>Avec votre accord (Android 13 et plus), l'application envoie des notifications : communiqués, panne d'un bus, arrivée à un point de ramassage, demandes, changements de rôle ou de bus, messages entre chauffeurs. Pour cela, votre téléphone enregistre un identifiant de notification auprès de Google (Firebase Cloud Messaging).</p>
+<p>Le texte d'une notification, par exemple le début d'un message entre chauffeurs, transite par les serveurs de Google et peut s'afficher sur l'écran verrouillé selon vos réglages. Vous pouvez refuser ou retirer l'autorisation à tout moment dans les réglages du téléphone.</p></section><section class="card" id="s7"><h2><span class="n">7.</span>Données enregistrées sur votre téléphone</h2><p>L'application garde sur l'appareil votre session de connexion, vos réglages (ville, thème, fenêtres et tutoriels déjà vus) et, si vous la téléchargez, la carte hors ligne de votre ville. Ces données restent sur le téléphone et disparaissent à la désinstallation.</p></section><section class="card" id="s8"><h2><span class="n">8.</span>Prestataires et services tiers</h2><ul><li><strong>Hébergement et authentification</strong> : un fournisseur de services en ligne héberge la base de données dans l'Union européenne (Irlande).</li>
+<li><strong>Google</strong> : « Continuer avec Google » (nom, e-mail, identifiant du compte), notifications (Firebase Cloud Messaging) et services de localisation de Google Play pour lire la position du téléphone. Aucune publicité Google n'est utilisée.</li>
+<li><strong>OpenFreeMap</strong> et <strong>OpenStreetMap</strong> : fonds de carte. Pour afficher la carte, votre téléphone télécharge des tuiles depuis les serveurs d'OpenFreeMap, qui reçoivent donc l'adresse IP de l'appareil, comme tout site web. Aucun compte ni identifiant ne leur est transmis. Données de carte © contributeurs d'OpenStreetMap, licence ODbL.</li></ul>
+<p>Nous ne vendons pas vos données et ne les partageons pas à des fins publicitaires. Les échanges sont chiffrés (HTTPS) et l'accès aux données est protégé par des règles de sécurité côté serveur.</p></section><section class="card" id="s9"><h2><span class="n">9.</span>Durée de conservation</h2><div class="tw"><table><tr><th>Donnée</th><th>Durée</th></tr><tr><td>Compte et profil</td><td>Tant que le compte existe</td></tr><tr><td>Dernière position d'un bus</td><td>Remplacée à chaque envoi, sans historique</td></tr><tr><td>Messages entre chauffeurs</td><td>90 jours</td></tr><tr><td>Signalements traités</td><td>90 jours après traitement</td></tr><tr><td>Pouces, étoiles et pannes terminées</td><td>90 jours</td></tr><tr><td>Notifications en attente</td><td>7 jours</td></tr></table></div><p class="note">Les autres données (montées, points, leçons, demandes) sont gardées tant que le compte existe.</p></section><section class="card" id="s10"><h2><span class="n">10.</span>Supprimer votre compte et vos données</h2><p>Dans l'application : touchez votre avatar en haut à droite pour ouvrir <strong>Paramètres</strong>, puis <strong>Supprimer mon compte</strong> (tout en bas) et confirmez. La suppression est immédiate et définitive : elle efface votre profil, votre compte de connexion, votre mot de passe, vos montées, vos pouces et étoiles, vos points, vos demandes, vos messages (y compris vos conversations avec d'autres chauffeurs, qui disparaissent aussi chez eux), vos leçons, vos communiqués lus et l'identifiant de notification de votre téléphone.</p>
+<p>Les trajets et pannes passés restent sous forme de statistiques sans identité. Le compte administrateur ne peut pas être supprimé depuis l'application.</p>
+<p>Sans l'application : voir la <a href="delete-account.html#suppression">page de suppression de compte</a>.</p></section><section class="card" id="s11"><h2><span class="n">11.</span>Vos droits</h2><p>Conformément à la loi camerounaise sur la protection des données personnelles, vous pouvez demander l'accès à vos données, leur correction ou leur suppression, et retirer votre consentement, en écrivant à <a href="mailto:kenmoekahadjiefelix@gmail.com">kenmoekahadjiefelix@gmail.com</a>. Nous répondons dans un délai raisonnable.</p></section><section class="card" id="s12"><h2><span class="n">12.</span>Âge minimum</h2><p>L'application s'adresse aux étudiants et personnels de l'enseignement supérieur, âgés de 18 ans et plus. Elle n'est pas destinée aux enfants.</p></section><section class="card" id="s13"><h2><span class="n">13.</span>Modifications</h2><p>Cette politique peut évoluer. La date de mise à jour figure en haut de la page ; les changements importants sont annoncés dans l'application.</p></section>
+</main>
+<footer class="bot"><div class="wrap"><span>INSAM BUS, application réalisée avec l'autorisation de l'INSAM.</span><span>Contact : <a href="mailto:kenmoekahadjiefelix@gmail.com">kenmoekahadjiefelix@gmail.com</a></span></div></footer>
+</body></html>

@@ -1,44 +1,57 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INSAM BUS - Conditions d'utilisation</title><style>
-:root{--fg:#202124;--bg:#fff;--mut:#5f6368;--acc:#1a73e8;--line:#dadce0}
-@media (prefers-color-scheme:dark){:root{--fg:#e8eaed;--bg:#202124;--mut:#9aa0a6;--acc:#8ab4f8;--line:#3c4043}}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
-h1{font-size:1.6rem;margin:.2em 0}h2{font-size:1.2rem;margin:1.8em 0 .4em;padding-top:.6em;border-top:1px solid var(--line)}
-p,li{color:var(--fg)}.mut{color:var(--mut);font-size:.9rem}a{color:var(--acc)}
-table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
-</style></head><body><main>
-<h1>Conditions d'utilisation d'INSAM BUS</h1>
-<p class="mut">Dernière mise à jour : 8 novembre 2026</p>
-
-<h2>1. Objet</h2>
-<p>INSAM BUS est l'application officielle de suivi en temps réel des bus universitaires de l'INSAM, réalisée avec son autorisation. Elle est réservée aux personnes de 18 ans et plus. En utilisant l'application, vous acceptez ces conditions.</p>
-
-<h2>2. Compte</h2>
-<ul>
-<li>La connexion se fait avec un compte Google ou avec une adresse e-mail et un mot de passe. Vous devez indiquer votre vrai prénom et votre vrai nom, et choisir un pseudo unique, qui est votre identité publique dans l'application. Le pseudo ne doit pas être injurieux, ni usurper une autre personne ou l'INSAM ; l'administration peut le réinitialiser.</li>
-<li>Les rôles de chauffeur et d'administrateur sont attribués par l'administrateur. Vous ne pouvez pas vous les attribuer.</li>
-<li>Vous êtes responsable de la sécurité de votre compte et de votre mot de passe. Ne les partagez avec personne.</li>
-</ul>
-
-<h2>3. Règles d'usage</h2>
-<ul>
-<li>Ne pas usurper l'identité d'une autre personne, ni tenter d'accéder à des données qui ne sont pas les vôtres.</li>
-<li>Ne pas envoyer de messages injurieux, menaçants, discriminatoires, trompeurs ou répétés (le nombre de messages est limité par minute et par heure).</li>
-<li>Messagerie entre chauffeurs : l'administrateur peut lire les conversations. Vous pouvez signaler un message, bloquer un chauffeur et supprimer vos propres messages. Un message abusif peut être supprimé et son auteur perdre son rôle de chauffeur.</li>
-<li>Ne pas essayer de perturber le service, le contourner ou en extraire les données automatiquement.</li>
-<li>Chauffeurs : ne vous rendez « Visible » que lorsque vous assurez réellement un service, et respectez le code de la route. Ne manipulez pas l'application en conduisant.</li>
-<li>Étudiants : n'appuyez sur « Monter » que lorsque vous montez réellement dans le bus ; l'étoile est une marque de reconnaissance, pas une évaluation.</li>
-</ul>
-
-<h2>4. Disponibilité et exactitude</h2>
-<p>Les positions et les horaires sont indicatifs : ils dépendent du GPS et de la connexion du téléphone du chauffeur. Le service est fourni « en l'état », sans garantie d'absence d'interruption, et ne remplace pas les consignes officielles de l'établissement.</p>
-
-<h2>5. Suspension</h2>
-<p>L'administrateur peut retirer un rôle, supprimer un contenu ou suspendre l'accès en cas d'usage contraire à ces conditions, notamment après un signalement.</p>
-
-<h2>6. Données personnelles</h2>
-<p>Le traitement de vos données est décrit dans la <a href="privacy.html">politique de confidentialité</a>.</p>
-
-<h2>7. Contact</h2>
-<p><a href="mailto:kenmoekahadjiefelix@gmail.com">kenmoekahadjiefelix@gmail.com</a></p>
-</main></body></html>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INSAM BUS - Conditions d'utilisation</title><meta name="color-scheme" content="light dark"><style>
+:root{--bg:#f6f8fb;--card:#fff;--fg:#17202e;--mut:#5b6678;--acc:#0b4f9e;--acc2:#e8f0fb;--line:#dde3ec;--hd:#0b2a52;--hdfg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0e141d;--card:#161e2b;--fg:#e6ebf3;--mut:#9aa7ba;--acc:#7fb2f0;--acc2:#1a2a42;--line:#27324a;--hd:#0a1b34;--hdfg:#fff}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+a{color:var(--acc)}
+header.top{background:var(--hd);color:var(--hdfg)}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.04em;color:var(--hdfg);text-decoration:none;font-size:1.05rem}
+nav.menu{display:flex;gap:4px;flex-wrap:wrap}
+nav.menu a{color:#cfdcf0;text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:6px}
+nav.menu a:hover{background:rgba(255,255,255,.12);color:#fff}
+nav.menu a[aria-current=page]{background:rgba(255,255,255,.18);color:#fff}
+.hero{padding:28px 0 36px}
+.hero h1{margin:0 0 6px;font-size:1.9rem;line-height:1.25}
+.hero p{margin:0;color:#cfdcf0;font-size:.95rem}
+main.wrap{padding-top:28px;padding-bottom:56px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:0 0 18px}
+.summary{background:var(--acc2);border-color:transparent}
+.summary h2{margin:0 0 8px;font-size:1.05rem;border:0;padding:0}
+.summary ul{margin:0;padding-left:20px}
+.summary li{margin:3px 0}
+.toc ol{margin:6px 0 0;padding-left:20px;columns:2;column-gap:28px}
+.toc li{margin:2px 0;break-inside:avoid}
+.toc h2{margin:0;font-size:1.05rem;border:0;padding:0}
+h2{font-size:1.2rem;margin:0 0 10px;scroll-margin-top:12px}
+h2 .n{color:var(--acc);margin-right:6px}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 10px;padding-left:22px}
+li{margin:4px 0}
+.tw{overflow-x:auto;margin:6px 0 10px;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:520px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--acc2);font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.03em}
+tr:last-child td{border-bottom:0}
+.note{font-size:.9rem;color:var(--mut)}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;position:relative;padding:4px 0 4px 40px;margin:8px 0}
+.steps li:before{content:counter(s);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--acc);color:#fff;text-align:center;line-height:28px;font-weight:700;font-size:.9rem}
+footer.bot{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--mut);font-size:.88rem}
+footer.bot .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+@media (max-width:560px){.hero h1{font-size:1.5rem}.toc ol{columns:1}.card{padding:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><div class="bar"><a class="brand" href="index.html">INSAM BUS</a><nav class="menu" aria-label="Navigation"><a href="index.html">Accueil</a><a href="privacy.html">Confidentialité</a><a href="terms.html" aria-current="page">Conditions</a><a href="delete-account.html">Supprimer mon compte</a></nav></div><div class="hero"><h1>Conditions d'utilisation</h1><p>Dernière mise à jour : 8 novembre 2026</p></div></div></header>
+<main class="wrap">
+<div class="card toc"><h2>Sommaire</h2><ol><li><a href="#s1">Objet</a></li><li><a href="#s2">Compte</a></li><li><a href="#s3">Règles d'usage</a></li><li><a href="#s4">Messagerie entre chauffeurs</a></li><li><a href="#s5">Disponibilité et exactitude</a></li><li><a href="#s6">Suspension</a></li><li><a href="#s7">Données personnelles</a></li><li><a href="#s8">Contact</a></li></ol></div><section class="card" id="s1"><h2><span class="n">1.</span>Objet</h2><p>INSAM BUS est l'application officielle de suivi en temps réel des bus universitaires de l'INSAM, réalisée avec son autorisation. Elle est réservée aux personnes de 18 ans et plus. En l'utilisant, vous acceptez ces conditions.</p></section><section class="card" id="s2"><h2><span class="n">2.</span>Compte</h2><ul><li>La connexion se fait avec un compte Google ou avec une adresse e-mail et un mot de passe. Indiquez votre vrai prénom et votre vrai nom, et choisissez un pseudo unique : c'est votre identité publique. Il ne doit être ni injurieux ni usurper une autre personne ou l'INSAM ; l'administration peut le réinitialiser.</li>
+<li>Les rôles de chauffeur et d'administrateur sont attribués par l'administrateur.</li>
+<li>Vous êtes responsable de la sécurité de votre compte. Ne partagez pas votre mot de passe.</li></ul></section><section class="card" id="s3"><h2><span class="n">3.</span>Règles d'usage</h2><ul><li>Ne pas usurper l'identité d'une autre personne ni tenter d'accéder à des données qui ne sont pas les vôtres.</li>
+<li>Ne pas envoyer de messages injurieux, menaçants, discriminatoires, trompeurs ou répétés.</li>
+<li>Ne pas perturber le service, le contourner ou en extraire les données de façon automatisée.</li>
+<li><strong>Chauffeurs</strong> : ne vous rendez « Visible » que lorsque vous assurez réellement un service, respectez le code de la route et ne manipulez pas l'application en conduisant.</li>
+<li><strong>Étudiants</strong> : n'appuyez sur « Monter » que lorsque vous montez réellement dans le bus. L'étoile est une marque de reconnaissance, pas une évaluation.</li></ul></section><section class="card" id="s4"><h2><span class="n">4.</span>Messagerie entre chauffeurs</h2><p>L'administrateur peut lire les conversations. Vous pouvez signaler un message, bloquer un chauffeur et supprimer vos propres messages. Un message abusif peut être supprimé et son auteur perdre son rôle de chauffeur.</p></section><section class="card" id="s5"><h2><span class="n">5.</span>Disponibilité et exactitude</h2><p>Les positions et horaires sont indicatifs : ils dépendent du GPS et de la connexion du téléphone du chauffeur. Le service est fourni « en l'état », sans garantie d'absence d'interruption, et ne remplace pas les consignes officielles de l'établissement.</p></section><section class="card" id="s6"><h2><span class="n">6.</span>Suspension</h2><p>L'administrateur peut retirer un rôle, supprimer un contenu ou suspendre l'accès en cas d'usage contraire à ces conditions, notamment après un signalement.</p></section><section class="card" id="s7"><h2><span class="n">7.</span>Données personnelles</h2><p>Le traitement de vos données est décrit dans la <a href="privacy.html">politique de confidentialité</a>.</p></section><section class="card" id="s8"><h2><span class="n">8.</span>Contact</h2><p><a href="mailto:kenmoekahadjiefelix@gmail.com">kenmoekahadjiefelix@gmail.com</a></p></section>
+</main>
+<footer class="bot"><div class="wrap"><span>INSAM BUS, application réalisée avec l'autorisation de l'INSAM.</span><span>Contact : <a href="mailto:kenmoekahadjiefelix@gmail.com">kenmoekahadjiefelix@gmail.com</a></span></div></footer>
+</body></html>
